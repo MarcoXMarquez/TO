@@ -97,7 +97,7 @@ Se adjuntan capturas que muestran la colaboración activa de todos los integrant
 
 ![Visualiza las ramas personales](img/evidencia-branches.jpg)
 
-![refleja la integración de las ramas en `main` mediante *pull requests*](img/evidencia-pullrequests.png)
+![Refleja la integración de las ramas en `main` mediante *pull requests*](img/evidencia-pullrequest.png)
 
 ---
 
