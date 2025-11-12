@@ -92,9 +92,9 @@ Cada ejercicio cuenta con su propio `README.md` explicando la implementación, y
 ## Evidencias de trabajo en equipo
 
 Se adjuntan capturas que muestran la colaboración activa de todos los integrantes en el repositorio del proyecto:
-- **evidencia-meet.png** → Muestra los commits realizados por todos los integrantes.  
-- **evidencia-branches.png** → Visualiza las ramas personales
-- **evidencia-pullrequests.png**
+- (evidencia-meet.jpg) → Muestra los commits realizados por todos los integrantes.  
+- (evidencia-branches.jpg) → Visualiza las ramas personales
+- (evidencia-pullrequests.png)
 ---
 
 ## Entregable
