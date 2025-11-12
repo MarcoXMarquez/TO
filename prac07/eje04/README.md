@@ -1,4 +1,4 @@
-Ejercicio 04 - Singleton en un Juego
+# Ejercicio 04 - Singleton en un Juego
 
 ## Objetivo
 Desarrollar una clase `ControlJuego` que maneje el **estado global** de un juego (nivel actual, puntaje, vidas) usando el patrón **Singleton**.  
