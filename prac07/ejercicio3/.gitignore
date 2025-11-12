@@ -1,0 +1,12 @@
+# Ignorar archivos compilados de Java
+*.class
+
+# Ignorar carpetas del sistema o del IDE
+/.idea/
+/.vscode/
+out/
+bin/
+
+# Ignorar archivos temporales
+*.log
+*.tmp
