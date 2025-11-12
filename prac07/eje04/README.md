@@ -78,10 +78,10 @@ control.mostrarEstado();
 ## Capturas de evidencia
 
 ### Ejecución del programa
-![Ejecución del programa](eje04-ejecucion.png)
+![Ejecución del programa](img/eje04-ejecucion.png)
 
 ### Diagrama UML
-![Diagrama UML](eje04-uml.png)
+![Diagrama UML](img/eje04-uml.png)
 
 ---
 
