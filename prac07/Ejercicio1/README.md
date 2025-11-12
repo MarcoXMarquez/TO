@@ -15,7 +15,6 @@ Propiedades por defecto
 Ejecutar el ejemplo (PowerShell)
 
 ```powershell
-cd 'c:\Users\Mikha\OneDrive\Desktop\Practica7_TEo\TO\prac07\Ejercicio1'
 javac Configuracion.java Main.java
 java Main
 ```
@@ -31,10 +30,5 @@ Notas sobre concurrencia y alternativas
   - Double-checked locking con un campo `volatile`.
   - Inicialización temprana (eager): `private static final Configuracion INST = new Configuracion();`.
   - Usar un `enum` como Singleton (`enum Singleton { INSTANCE; }`), que es seguro frente a serialización y reflexión.
-
-Resumen de cambios
-
-- Clase `Configuracion` implementa un Singleton lazy con sincronización.
-- `Main` demuestra la unicidad de la instancia y muestra la configuración por consola.
 
 Autor: Mikhail Gabino Velasque Arcos
