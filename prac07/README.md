@@ -21,11 +21,11 @@
 
 | Ejercicio | Descripción breve | Responsable |
 |------------|------------------|--------------|
-| **eje01** | Singleton básico: clase `Configuracion` con idioma y zona horaria. | **Mikhail Velasque** |
-| **eje02** | Logger único que registra mensajes en un archivo. | **Leonardo Arce** |
-| **eje03** | Simulación de conexión única a una base de datos. | **Sebastian Alfonso** |
-| **eje04** | Control global del estado del juego. | **Marco Marquez** |
-| **eje05** | Versión thread-safe del Logger o la conexión BD. | **Trabajo conjunto** |
+| [**eje01**](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje01) | Singleton básico: clase `Configuracion` con idioma y zona horaria. | **Mikhail Velasque** |
+| [**eje02**](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje02) | Logger único que registra mensajes en un archivo. | **Leonardo Arce** |
+| [**eje03**](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje03) | Simulación de conexión única a una base de datos. | **Sebastian Alfonso** |
+| [**eje04**](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje04) | Control global del estado del juego. | **Marco Marquez** |
+| [**eje05**](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje05) | Versión thread-safe del Logger o la conexión BD. | **Trabajo conjunto** |
 
 ---
 
@@ -83,12 +83,12 @@ El Singleton puede ser destruido o reiniciado si se necesita; una clase estátic
 
 Cada ejercicio cuenta con su propio `README.md` explicando la implementación, y en algunos casos, con diagramas UML o capturas de ejecución:
 
-- `eje01/README.md`
-- `eje02/README.md`
-- `eje03/README.md`
-- `eje04/README.md` 
-- `eje05/README.md`
-- 
+- [`eje01/README.md`](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje01/README.md)
+- [`eje02/README.md`](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje02/README.md)
+- [`eje03/README.md`](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje03/README.md)
+- [`eje04/README.md`](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje04/README.md)
+- [`eje05/README.md`](https://github.com/MarcoXMarquez/TO/tree/main/prac07/eje05/README.md)
+
 ## Evidencias de trabajo en equipo
 
 Se adjuntan capturas que muestran la colaboración activa de todos los integrantes en el repositorio del proyecto:
@@ -97,7 +97,7 @@ Se adjuntan capturas que muestran la colaboración activa de todos los integrant
 
 ![Visualiza las ramas personales](img/evidencia-branches.jpg)
 
-![Refleja la integración de las ramas en `main` mediante *pull requests*](img/evidencia-pullrequest.png)
+![Refleja la integración de las ramas en `main` mediante *pull requests*](img/evidencia-pullrequest.jpg)
 
 ---
 
