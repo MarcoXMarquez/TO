@@ -1,68 +1,34 @@
-# Ejercicio 01 - Singleton (Configuracion)
+# Ejercicio 01 - Singleton (Configuración)
 
-Descripción del ejercicio:
+Descripción
 
-Se ha creado la clase `Configuracion` implementando el patrón Singleton. Esta clase almacena dos propiedades básicas:
+Esta carpeta contiene una implementación sencilla del patrón Singleton en Java.
 
-- `idioma` (por defecto: `es`).
-- `zonaHoraria` (por defecto: la zona del sistema obtenida por `ZoneId.systemDefault()`).
+- `Configuracion.java`: clase que mantiene valores de configuración del sistema (por ejemplo, `idioma` y `zonaHoraria`). Está implementada como Singleton (constructor privado y método estático para obtener la instancia única).
+- `Main.java`: ejemplo de uso que obtiene la instancia, modifica valores y muestra en consola que todas las referencias apuntan a la misma instancia.
 
-La clase ofrece el método `mostrar_configuracion()` que imprime los valores actuales.
+Propiedades por defecto
 
-Implementación principal:
+- `idioma`: `es`
+- `zonaHoraria`: se obtiene desde la zona por defecto del sistema con `ZoneId.systemDefault()`.
 
-- `Configuracion.java`: clase Singleton con constructor privado, campo estático `instancia` y método `public static synchronized Configuracion getInstance()` para obtener la única instancia. Incluye getters/setters y `mostrar_configuracion()`.
-- `Main.java`: programa de ejemplo que obtiene la instancia, modifica valores y demuestra que varias "referencias" apuntan a la misma instancia (ver comparación y `identityHashCode`).
-
-Compilar y ejecutar (PowerShell en Windows):
+Ejecutar el ejemplo (PowerShell)
 
 ```powershell
-# Moverse a la carpeta Ejercicio1
-cd 'c:\Users\Mikha\OneDrive\Desktop\Practica7_TEo\TO\prac07\Ejercicio1'
-
-# Compilar
 javac Configuracion.java Main.java
-
-# Ejecutar
 java Main
 ```
 
-Salida esperada (ejemplo):
+Salida (captura de consola)
 
-```
---- Desde c1 ---
-Idioma: es
-Zona horaria: America/Mexico_City
+![Salida del programa](./Consola.jpg)
 
---- Desde c2 (debe ser la misma instancia) ---
-Idioma: es
-Zona horaria: America/Mexico_City
+Notas sobre concurrencia y alternativas
 
-c1 == c2 ? true
-identityHashCode c1: 366712642
-identityHashCode c2: 366712642
-```
-
-Notas sobre concurrencia y alternativas:
-
-- En esta implementación `getInstance()` es `synchronized`, lo cual garantiza que no se creen dos instancias en entornos multi-hilo, pero puede tener impacto en rendimiento si se llama frecuentemente.
+- En esta implementación `getInstance()` está sincronizado para evitar la creación de varias instancias en escenarios multi-hilo. Esto es seguro pero puede tener un coste de rendimiento si se llama con mucha frecuencia.
 - Alternativas más eficientes:
-  - Doble verificación (double-checked locking) con campo `volatile`.
-  - Inicialización temprana (eager): `private static final Configuracion INST = new Configuracion();` — simple y segura si la creación no es costosa.
-  - Usar un `enum` para Singleton en Java (`enum Singleton { INSTANCE; }`) — forma recomendada por Joshua Bloch por ser segura contra serialización y reflexión.
+  - Double-checked locking con un campo `volatile`.
+  - Inicialización temprana (eager): `private static final Configuracion INST = new Configuracion();`.
+  - Usar un `enum` como Singleton (`enum Singleton { INSTANCE; }`), que es seguro frente a serialización y reflexión.
 
-Qué hice exactamente:
-
-- Implementé `Configuracion` como Singleton (lazy + `synchronized`).
-- Implementé `Main` para demostrar la unicidad de la instancia.
-- Añadí este `README.md` con instrucciones de compilación/ejecución y notas sobre concurrencia.
-
-Si quieres, puedo:
-
-- Ajustar la implementación para usar "double-checked locking".
-- Añadir pruebas unitarias (JUnit) que verifiquen la unicidad bajo concurrencia.
-- Empaquetar el ejemplo en un pequeño `build.gradle` o `pom.xml`.
-
----
-
-Autor: Ejercicio implementado por GitHub Copilot (asistente). Si quieres que lo adapte a un paquete Java (`package ...`) dímelo.
+Autor: Mikhail Gabino Velasque Arcos
